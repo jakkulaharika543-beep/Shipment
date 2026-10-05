@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ShipTrack</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/">🚚 ShipTrack</a>
+    <a href="/register.html">Create account</a>
+  </nav>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <span class="pill">WELCOME BACK</span>
+      <h1>Login</h1>
+      <p class="muted">Access your ShipTrack dashboard.</p>
+
+      <form id="loginForm">
+        <label>Email</label>
+        <input id="email" type="email" required placeholder="you@example.com">
+
+        <label>Password</label>
+        <input id="password" type="password" required placeholder="••••••••">
+
+        <button class="btn full" type="submit">Login</button>
+      </form>
+
+      <div id="message" class="message"></div>
+
+      <div class="demo-box">
+        <b>Demo admin</b><br>
+        admin@shiptrack.com / Admin@123
+        <br><br>
+        <b>Demo delivery</b><br>
+        delivery@shiptrack.com / Delivery@123
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>

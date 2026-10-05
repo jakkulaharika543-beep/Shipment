@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - ShipTrack</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/">🚚 ShipTrack</a>
+    <a href="/login.html">Login</a>
+  </nav>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <span class="pill">NEW CUSTOMER</span>
+      <h1>Create account</h1>
+      <p class="muted">Register as a customer to create shipments.</p>
+
+      <form id="registerForm">
+        <label>Name</label>
+        <input id="name" required placeholder="Your name">
+
+        <label>Email</label>
+        <input id="email" type="email" required placeholder="you@example.com">
+
+        <label>Phone</label>
+        <input id="phone" required placeholder="10 digit phone">
+
+        <label>Password</label>
+        <input id="password" type="password" required minlength="6" placeholder="At least 6 characters">
+
+        <button class="btn full" type="submit">Create Account</button>
+      </form>
+
+      <div id="message" class="message"></div>
+    </div>
+  </main>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>

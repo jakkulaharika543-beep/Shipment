@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Shipment - ShipTrack</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/">🚚 ShipTrack</a>
+    <div>
+      <a href="/login.html">Login</a>
+      <a class="btn small" href="/register.html">Register</a>
+    </div>
+  </nav>
+
+  <main class="tracking-page">
+    <section class="tracking-hero">
+      <span class="pill">SHIPMENT TRACKING</span>
+      <h1>Where is your parcel?</h1>
+      <p>Enter your ShipTrack tracking ID.</p>
+      <form id="trackForm" class="track-form">
+        <input id="trackingId" placeholder="Example: ST12345678" required>
+        <button class="btn" type="submit">Track</button>
+      </form>
+      <div id="message" class="message"></div>
+    </section>
+
+    <section id="result" class="card hidden"></section>
+  </main>
+
+  <script src="/js/tracking.js"></script>
+</body>
+</html>
